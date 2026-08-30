@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="RideMatch.API/RideMatch.API.csproj" />
+  <Project Path="RideMatch.Core/RideMatch.Core.csproj" Id="28c6fdbd-9c2f-4cd1-ab2b-501dbb441211" />
+  <Project Path="RideMatch.Domain/RideMatch.Domain.csproj" Id="16f7181a-3317-4d7e-b02d-96eadbc233be" />
+  <Project Path="RideMatch.Infrastructure/RideMatch.Infrastructure.csproj" Id="162fd15e-997c-410a-aee6-a586a35843c4" />
+  <Project Path="RideMatch.Service/RideMatch.Service.csproj" Id="45825b8e-27aa-4ea6-93cb-2a6a8196437c" />
+</Solution>
