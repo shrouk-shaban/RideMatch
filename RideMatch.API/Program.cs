@@ -1,4 +1,6 @@
 
+using RideMatch.Infrastructure;
+
 namespace RideMatch.API
 {
     public class Program
@@ -6,10 +8,10 @@ namespace RideMatch.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            
+
 
             // Add services to the container.
-
+            builder.Services.AddInfrastructureServices(builder.Configuration);
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             //builder.Services.AddOpenApi();
