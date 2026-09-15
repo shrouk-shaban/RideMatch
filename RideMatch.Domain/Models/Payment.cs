@@ -16,10 +16,12 @@ namespace RideMatch.Domain
         public decimal PlatformCommissionPercentage { get; set; }
         public PaymentStatus Status { get; set; }
         public string? TransactionReference { get; set; }
-        public DateTime CreatedAt { get; set; }
         public DateTime? PaidAt { get; set; }
 
         // Relationship
         public Ride Ride { get; set; } = null!;
+        /*------------------Audit-------------------*/
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
     }
 }

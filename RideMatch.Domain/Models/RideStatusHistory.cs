@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RideMatch.Domain
 {
-    public class RideSatusHistory
+    public class RideStatusHistory
     {
         public int Id { get; set; }
         public RideStatus FromStatus { get; set; }
@@ -13,5 +13,6 @@ namespace RideMatch.Domain
         // Relationship
         public int RideId { get; set; }
         public Ride Ride { get; set; } = null!;
+    
     }
 }

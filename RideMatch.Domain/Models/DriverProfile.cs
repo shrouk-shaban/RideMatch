@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RideMatch.Domain
 {
-    public class DriverProfile
+    public class DriverProfile : IAuditableEntity
     {
         public int Id { get; set; }
         public string LicenseNumber { get; set; } = null!;
@@ -25,7 +25,9 @@ namespace RideMatch.Domain
             = new List<RideAssignment>();
         public ICollection<RideOffer> RideOffers { get; set; }
             = new List<RideOffer>();
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
     }
 
 }
-}
+

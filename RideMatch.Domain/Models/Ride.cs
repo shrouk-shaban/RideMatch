@@ -28,7 +28,7 @@ namespace RideMatch.Domain
         public ICollection<RideAssignment> RideAssignments { get; set; }
             = new List<RideAssignment>();
 
-      /*  public ICollection<RideOffer> RideOffers { get; set; }
+        public ICollection<RideOffer> RideOffers { get; set; }
             = new List<RideOffer>();
 
         public ICollection<RideStatusHistory> StatusHistory { get; set; }
@@ -38,7 +38,10 @@ namespace RideMatch.Domain
             = new List<Payment>();
 
         public ICollection<Review> Reviews { get; set; }
-            = new List<Review>();*/
+            = new List<Review>();
+        /*------------------Audit-------------------*/
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
 
     }
 }

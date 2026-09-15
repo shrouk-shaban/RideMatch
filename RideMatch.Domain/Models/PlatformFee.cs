@@ -11,9 +11,11 @@ namespace RideMatch.Domain
         public decimal PricePerKm { get; set; }
         public decimal PricePerMinute { get; set; }
         public decimal PlatformCommissionPercentage { get; set; }
-        public DateTime UpdatedAt { get; set; }
         public string UpdatedByUserId { get; set; } = null!;
         // Relationship
         public ApplicationUser UpdatedByUser { get; set; } = null!;
+        /*------------------Audit-------------------*/
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
     }
 }

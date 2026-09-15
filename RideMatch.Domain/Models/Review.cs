@@ -9,7 +9,6 @@ namespace RideMatch.Domain
         public int Id { get; set; }
         public int Rating { get; set; }
         public string? Comment { get; set; }
-        public DateTime CreatedAt { get; set; }
 
         // Relationships
         public int RideId { get; set; }
@@ -18,5 +17,8 @@ namespace RideMatch.Domain
         public string RevieweeId { get; set; } = null!;
         public ApplicationUser Reviewer { get; set; } = null!;
         public ApplicationUser Reviewee { get; set; } = null!;
+        /*------------------Audit-------------------*/
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
     }
 }
