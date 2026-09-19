@@ -9,12 +9,13 @@ on:
   pull_request:
     branches:
       - dev
+      - main
 
   # Run CI whenever code is pushed directly to dev or master
   push:
     branches:
       - dev
-      - master
+      - main
 
 # Define the jobs that GitHub Actions will execute
 jobs:
@@ -56,4 +57,4 @@ jobs:
       # --no-build prevents building the project again
       - name: Run tests
         run: dotnet test --no-build --configuration Release
-```
+
