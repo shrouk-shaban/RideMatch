@@ -26,8 +26,6 @@ namespace RideMatch.API
             {
                 app.UseSwagger();
                 ///app.MapOpenApi();
-                //app.UseSwaggerUI();
-
                 app.UseSwaggerUI(c=>{
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ride Match API v1");
                 });
