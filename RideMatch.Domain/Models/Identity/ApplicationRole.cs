@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace RideMatch.Domain.Models.Identity
+namespace RideMatch.Domain
 {
     public class ApplicationRole :IdentityRole<string>
     {

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using RideMatch.Domain;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,7 +21,7 @@ namespace RideMatch.Infrastructure
         base.OnModelCreating(modelBuilder);
 
     }
-    /*-----------------------------------*/
+    /*-----------------------------------------------------------------------------*/
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
         var entries = ChangeTracker.Entries<IAuditableEntity>();
@@ -38,8 +39,8 @@ namespace RideMatch.Infrastructure
         }
 
         return base.SaveChangesAsync(cancellationToken);
-    }
-        /*--------------------------------------*/
-    {
+        }
+    /*-----------------------------------------------------------------------------*/
+    
     }
 }

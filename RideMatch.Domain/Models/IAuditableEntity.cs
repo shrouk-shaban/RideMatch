@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RideMatch.Domain.Models
+namespace RideMatch.Domain
 {
     public interface  IAuditableEntity
     {
