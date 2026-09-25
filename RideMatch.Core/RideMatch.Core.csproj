@@ -8,8 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RideMatch.Domain\RideMatch.Domain.csproj" />
-    <ProjectReference Include="..\RideMatch.Infrastructure\RideMatch.Infrastructure.csproj" />
-    <ProjectReference Include="..\RideMatch.Service\RideMatch.Service.csproj" />
   </ItemGroup>
 
 </Project>

@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RideMatch.Core\RideMatch.Core.csproj" />
+    <ProjectReference Include="..\RideMatch.Infrastructure\RideMatch.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
